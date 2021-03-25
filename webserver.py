@@ -32,7 +32,6 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.beep()
         print("[!] Receieved, beginning reconnaissance...")
         
-        print("[1] Shutdown server")
         self.beep()
         self.connect_to_drone()
         self.beep()
