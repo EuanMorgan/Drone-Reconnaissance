@@ -32,6 +32,11 @@ def getKeyboardInput():
     if kp.getKey("z"): 
         cv2.imwrite(f'Resources/Images/{time.time()}.jpg',big_img)
         time.sleep(0.3)
+    
+    if kp.getKey("1"): me.flip_forward()
+    if kp.getKey("2"): me.flip_back()
+    if kp.getKey("3"): me.flip_left()
+    if kp.getKey("4"): me.flip_right()
     return [lr,fb,ud,yv]
 
 while True:
